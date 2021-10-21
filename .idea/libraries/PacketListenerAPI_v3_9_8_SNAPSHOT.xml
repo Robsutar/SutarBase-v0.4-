@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="PacketListenerAPI_v3.9.8-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Dependencies/PacketListenerAPI_v3.9.8-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

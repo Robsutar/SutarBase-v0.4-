@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="NickNamer_v3.22.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Dependencies/NickNamer_v3.22.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

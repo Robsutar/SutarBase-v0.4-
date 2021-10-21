@@ -1,0 +1,19 @@
+name: SutarBase
+version: 1.0
+author: Robsutar
+main: main.com.robsutar.sutarbase.SutarBase
+api-version: 1.14
+softdepend: [PlaceholderAPI]
+commands:
+  ssetprefix:
+    description: set a tag
+    usage: /<command>
+  ssave:
+    description: save yml files
+    usage: /<command>
+  ssetnick:
+    description: setnick
+    usage: /<command>
+  kit:
+    description: open kit gui
+    usage: /<command>
