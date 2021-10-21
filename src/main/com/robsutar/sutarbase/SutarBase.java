@@ -9,8 +9,7 @@ import main.com.robsutar.sutarbase.commands.SCommands;
 import main.com.robsutar.sutarbase.files.PlayerConfig;
 import main.com.robsutar.sutarbase.files.KitsConfig;
 import main.com.robsutar.sutarbase.files.ServerConfig;
-import main.com.robsutar.sutarbase.items.kits.ItemManager;
-import main.com.robsutar.sutarbase.items.kits.itemEvent.FlameEvent;
+import main.com.robsutar.sutarbase.items.kits.KitItemsManager;
 import main.com.robsutar.sutarbase.items.kits.itemEvent.FlameEventListener;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -50,7 +49,7 @@ public class SutarBase extends JavaPlugin {
         getCommand("ssetnick").setExecutor(commands);
         getCommand("kit").setExecutor(commands);
 
-        ItemManager.init();
+        KitItemsManager.init();
 
         getServer().getPluginManager().registerEvents(new ScoreboardPlayerEvents(),this);
         getServer().getPluginManager().registerEvents(new PlayerTimer(),this);

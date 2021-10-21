@@ -9,13 +9,15 @@ import org.bukkit.inventory.meta.ItemMeta;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ItemManager {
+public class KitItemsManager {
     public static ItemStack rain = new ItemStack(Material.WARPED_HYPHAE);
     public static ItemStack flame = new ItemStack(Material.FIRE_CHARGE);
+    public static ItemStack perforation = new ItemStack(Material.NETHER_STAR);
 
     public static void init(){
         createKit("Rain",ChatColor.BLUE,rain);
         createKit("Flame",ChatColor.GOLD,flame);
+        createKit("Perforation",ChatColor.AQUA,perforation);
     }
 
     public static void createKit(String n, ChatColor c,ItemStack i){

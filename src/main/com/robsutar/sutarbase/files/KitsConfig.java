@@ -49,5 +49,6 @@ public class KitsConfig {
     public static void setDeffauts() {
         get().addDefault("Rain.lore","Atira flechas de água no inimigo causando dano e lentidão");
         get().addDefault("Flame.lore","Acerta o inimigo com uma bola flamejante por baixo do inimigo");
+        get().addDefault("Perforation.lore","Atravessa o inimigo causando dano e jogando-o para cima");
     }
 }

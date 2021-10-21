@@ -12,19 +12,16 @@ public class KitsMethods {
         BlockIterator iter = new BlockIterator(player, range);
 
         Block lastBlock = iter.next();
-        Location loc= lastBlock.getLocation();
 
         while (iter.hasNext()) {
 
             lastBlock = iter.next();
-            loc= lastBlock.getLocation();
-
             if (lastBlock.getType() == Material.AIR) {
                 continue;
             }
             break;
         }
-        loc = lastBlock.getLocation();
+        Location loc = lastBlock.getLocation();
         return loc;
     }
 }

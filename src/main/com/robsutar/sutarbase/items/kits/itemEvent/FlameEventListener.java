@@ -1,11 +1,10 @@
 package main.com.robsutar.sutarbase.items.kits.itemEvent;
 
-import main.com.robsutar.sutarbase.items.kits.ItemManager;
+import main.com.robsutar.sutarbase.items.kits.KitItemsManager;
 import main.com.robsutar.sutarbase.items.kits.KitsMethods;
 import org.bukkit.Effect;
 import org.bukkit.Location;
 import org.bukkit.World;
-import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
@@ -40,7 +39,7 @@ public class FlameEventListener implements Listener {
     }
     @EventHandler
     public static void onItemUsed(PlayerInteractEvent e){
-        if (e.getItem().getItemMeta().equals(ItemManager.flame.getItemMeta())) {
+        if (e.getItem().getItemMeta().equals(KitItemsManager.flame.getItemMeta())) {
             e.setCancelled(true);
             if (e.getAction()== Action.RIGHT_CLICK_AIR) {
                 Player p = e.getPlayer();
