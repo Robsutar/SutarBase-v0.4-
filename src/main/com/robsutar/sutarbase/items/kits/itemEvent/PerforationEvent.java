@@ -1,5 +1,8 @@
 package main.com.robsutar.sutarbase.items.kits.itemEvent;
 
+import main.com.robsutar.sutarbase.items.kits.KitsMethods;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
@@ -7,16 +10,17 @@ import org.bukkit.event.HandlerList;
 public class PerforationEvent extends Event {
 
     Player user;
-    Player target;
+    Entity target;
 
-    public PerforationEvent(Player u,Player t){
-        user = u;target =t;
+    public PerforationEvent(Player u){
+        user = u;
+        target = KitsMethods.getLookingEntity(u,7);
     }
 
     public Player getUser() {
         return user;
     }
-    public Player getTarget() {
+    public Entity getTarget() {
         return target;
     }
 

@@ -11,6 +11,7 @@ import main.com.robsutar.sutarbase.files.KitsConfig;
 import main.com.robsutar.sutarbase.files.ServerConfig;
 import main.com.robsutar.sutarbase.items.kits.KitItemsManager;
 import main.com.robsutar.sutarbase.items.kits.itemEvent.FlameEventListener;
+import main.com.robsutar.sutarbase.items.kits.itemEvent.PerforationEventListener;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -55,7 +56,9 @@ public class SutarBase extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PlayerTimer(),this);
         getServer().getPluginManager().registerEvents(new NickChanger(),this);
         getServer().getPluginManager().registerEvents(new PlayerEvents(),this);
+
         getServer().getPluginManager().registerEvents(new FlameEventListener(),this);
+        getServer().getPluginManager().registerEvents(new PerforationEventListener(),this);
 
         ServerEvents.serverTicable();
         getServer().getConsoleSender().sendMessage(SUTARBASE+GOODCREDITS);
